@@ -1,0 +1,251 @@
+<aiml version="1.0.1" encoding="UTF-8">
+
+<!-- Greetings and Politeness -->
+<category> <pattern> HELLO </pattern>
+  <template>Hello! How are you?</template> </category>
+
+<category> <pattern> HELLO * </pattern>
+  <template><srai>HELLO</srai></template> </category>
+
+<category> <pattern> HI </pattern>
+  <template><srai>HELLO</srai></template> </category>
+
+<category> <pattern> HI * </pattern>
+  <template><srai>HELLO</srai></template> </category>
+
+<category> <pattern> HEY </pattern>
+  <template><srai>HELLO</srai></template> </category>
+
+<category> <pattern> HEY * </pattern>
+  <template><srai>HELLO</srai></template> </category>
+
+<category> <pattern> HOW ARE YOU </pattern>
+  <template>I'm functioning within normal parameters, thanks for asking.</template></category>
+
+<category><pattern> I AM FINE </pattern>
+  <template>That's good to know. What would you like to discuss about?</template></category>
+
+<category><pattern> BYE </pattern>
+  <template>#0$Bye! Nice talking to you. You take care now.</template></category>
+
+<category><pattern> GOODBYE </pattern>
+  <template><srai>BYE</srai></template></category>
+
+<category><pattern> EXIT </pattern>
+  <template><srai>BYE</srai></template></category>
+
+<category> <pattern> THANKS </pattern>
+  <template>You are welcome.</template></category>
+
+<category> <pattern> THANK YOU </pattern>
+  <template><srai>THANKS</srai></template></category>
+
+<category> <pattern> CHEERS </pattern>
+  <template>Sure mate.</template></category>
+
+<category> <pattern> CHEERS * </pattern>
+  <template>Sure mate.</template></category>
+
+<!--- Wikipedia API -->
+<category><pattern> WHAT IS A * </pattern>
+  <template>#1$<star index="1"/></template></category>
+
+<category><pattern> WHAT IS AN * </pattern>
+  <template><srai>WHAT IS A <star/></srai></template></category>
+
+<category><pattern> WHAT IS * </pattern>
+  <template><srai>WHAT IS A <star/></srai></template></category>
+
+<category><pattern> DEFINE * </pattern>
+  <template><srai>WHAT IS A <star/></srai></template></category>
+
+<category><pattern> WHO IS * </pattern>
+  <template><srai>WHAT IS A <star/></srai></template></category>
+
+<!--- Video Game API -->
+
+<category>
+    <pattern>VIDEO GAMES </pattern>
+    <template>What would u like to know about video games?</template>
+</category>
+
+<category>
+    <pattern> RECOMMEND A VIDEO GAME </pattern>
+    <template>What genre are you interested in?</template>
+</category>
+
+<category>
+    <pattern>RECOMMEND A *</pattern>
+    <template>What genre are you interested in?</template>
+</category>
+
+<category>
+    <pattern>RECOMMEND A POPULAR GAME</pattern>
+    <template>Which genre are you interested in?</template>
+</category>
+
+<category>
+    <pattern>WHAT GENRES ARE *</pattern>
+    <template>They are 15 main game genres which include; Action, Adventure, Role-playing(RPG), Simulation, Strategy, Sports, Puzzle, Racing, Fighting, Shooter, Horror, Music/Rhythm, Platformer, MOBA(Multiplayer online Battle Arena) and Survival. Which genre do you like ?  </template>
+</category>
+
+
+<category>
+    <pattern>I LIKE ACTION GAMES</pattern>
+    <template>
+        Action games are fast-paced and require quick reflexes! Some popular action games include Fortnite, Call of Duty, and Assassin's Creed. Would you like to know about popular or indie action games?
+    </template>
+</category>
+
+<category>
+    <pattern>I LIKE ADVENTURE GAMES</pattern>
+    <template>
+        Adventure games often focus on storytelling and exploration. Games like The Legend of Zelda: Breath of the Wild, Life is Strange, and The Walking Dead are great examples. Are you interested in popular or indie adventure games?
+    </template>
+</category>
+
+<category>
+    <pattern>I LIKE RPG GAMES</pattern>
+    <template>
+        Role-Playing games often allow players to assume the roles of characters in a fictional setting. Examples include "The Witcher 3: Wild Hunt", "Skyrim", and "Final Fantasy XV". Would you like to know about popular or indie RPG games?
+    </template>
+</category>
+
+<category>
+    <pattern>I LIKE ROLE PLAYING GAMES</pattern>
+    <template>
+        Role-Playing games often allow players to assume the roles of characters in a fictional setting. Examples include "The Witcher 3: Wild Hunt", "Skyrim", and "Final Fantasy XV". Would you like to know about popular or indie RPG games?
+    </template>
+</category>
+
+<category>
+    <pattern>I LIKE ROLEPLAYING GAMES</pattern>
+    <template>
+        Role-Playing games often allow players to assume the roles of characters in a fictional setting. Examples include "The Witcher 3: Wild Hunt", "Skyrim", and "Final Fantasy XV". Would you like to know about popular or indie RPG games?
+    </template>
+</category>
+
+
+<category>
+    <pattern>I LIKE SIMULATION GAMES</pattern>
+    <template>
+         Simulation games often simulate real-world activities with varying degrees of realism. Examples: "The Sims", "Microsoft Flight Simulator", "Farming Simulator". Are you interested in popular or indie simulation games?
+    </template>
+</category>
+
+<category>
+    <pattern>I LIKE STRATEGY GAMES</pattern>
+    <template>
+         Strategy games often emphasize strategic, tactical, and sometimes logistical challenges. Examples: "StarCraft II", "Civilization VI", "Total War: Three Kingdoms". Are you interested in popular or indie strategy games?
+    </template>
+</category>
+
+<category>
+    <pattern>I LIKE SPORTS GAMES</pattern>
+    <template>
+         Sports games often simulate playing sports or managing sports teams. Examples: "FIFA", "Madden NFL", "NBA 2K". Are you interested in popular or indie sports games?
+    </template>
+</category>
+
+<category>
+    <pattern>I LIKE PUZZLE GAMES</pattern>
+    <template>
+         Puzzle games require players to solve puzzles to advance in the game. Examples: "Tetris", "Portal", "The Witness". Are you interested in popular or indie puzzle games?
+    </template>
+</category>
+
+<category>
+    <pattern>I LIKE RACING GAMES</pattern>
+    <template>
+         Racing games simulate vehicle racing, and may include realistic physics or more arcade-style gameplay. Examples: "Forza Horizon", "Gran Turismo", "Mario Kart". Are you interested in popular or indie racing games?
+    </template>
+</category>
+
+<category>
+    <pattern>I LIKE FIGHTING GAMES</pattern>
+    <template>
+         Fighting games focus on close-range combat between a limited number of characters, often in a contained arena. Examples: "Street Fighter", "Tekken", "Mortal Kombat". Are you interested in popular or indie fighting games?
+    </template>
+</category>
+
+<category>
+    <pattern>I LIKE SHOOTER GAMES</pattern>
+    <template>
+         Shooter games players often use ranged weapons to engage enemies. Examples: "Call of Duty", "Overwatch", "Counter-Strike". Are you interested in popular or indie shooter games?
+    </template>
+</category>
+
+<category>
+    <pattern>I LIKE HORROR GAMES</pattern>
+    <template>
+         Horror games are designed to scare the player, often featuring dark narrative elements and unsettling atmospheres. Examples: "Resident Evil", "Silent Hill", "Outlast". Are you interested in popular or indie horror games?
+    </template>
+</category>
+
+<category>
+    <pattern>I LIKE MUSIC/RHYTHM GAMES</pattern>
+    <template>
+         Music/rhythm games players often match their actions to a musical rhythm, often featuring songs. Examples: "Guitar Hero", "Beat Saber", "Just Dance". Are you interested in popular or indie music/rhythm games?
+    </template>
+</category>
+
+<category>
+    <pattern>I LIKE PLATFORMER GAMES</pattern>
+    <template>
+          Platformer games players often navigate levels by running, jumping, and dodging obstacles. Examples: "Super Mario Bros.", "Celeste", "Donkey Kong". Are you interested in popular or indie platformer games?
+    </template>
+</category>
+
+<category>
+    <pattern>I LIKE MOBA GAMES</pattern>
+    <template>
+        MOBA games, where teams of players compete against each other on a predefined battlefield, are quite popular. Some examples include "League of Legends", "Dota 2", and "Smite". Would you like to know about popular or indie MOBA games?
+    </template>
+</category>
+
+<category>
+    <pattern>I LIKE MULTIPLAYER ONLINE BATTLE ARENA GAMES</pattern>
+    <template>
+        Multiplayer Online Battle Arena games, or MOBA, involve teams competing on a strategic battlefield. Titles like "League of Legends", "Dota 2", and "Smite" are renowned in this genre. Are you interested in exploring popular or indie MOBA games?
+    </template>
+</category>
+
+<category>
+    <pattern>I LIKE MOBA (MULTIPLAYER ONLINE BATTLE ARENA) GAMES</pattern>
+    <template>
+        MOBA games, also known as Multiplayer Online Battle Arena games, feature team-based competition on a strategic map. Popular examples include "League of Legends", "Dota 2", and "Smite". Would you like recommendations for popular or indie MOBA games?
+    </template>
+</category>
+
+<category>
+    <pattern>I LIKE SURVIVAL GAMES</pattern>
+    <template>
+          Survival games Focus on survival of the player character in a hostile environment with limited resources. Examples: "Minecraft", "Rust", "ARK: Survival Evolved". Are you interested in popular or indie Survival games?
+    </template>
+</category>
+
+<category>
+    <pattern>RECOMMEND POPULAR * GAMES</pattern>
+    <template>#2$<star/></template>
+</category>
+
+<category>
+    <pattern>RECOMMEND INDIE * GAMES</pattern>
+    <template>#3$<star/></template>
+</category>
+
+
+<!-- Logic input -->
+<category><pattern> I KNOW THAT * IS *</pattern>
+  <template>#31$<star index="1"/> is <star index="2"/></template></category>  
+
+<category><pattern> CHECK THAT * IS *</pattern>
+  <template>#32$<star index="1"/> is <star index="2"/></template></category>  
+   
+
+<!-- Default reaction -->
+<category><pattern> * </pattern>
+  <template>#99$<star index="1"/></template></category>
+
+
+</aiml>

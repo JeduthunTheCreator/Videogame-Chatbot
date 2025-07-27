@@ -1,0 +1,10 @@
+"exists  y. (isGame(x)  &  isGenre(y) &  belongsToGenre(x, y))"
+"(isGame(x) & isMultiplayer(x)) -> exists y. (isPlayer(y) & plays(y, x))"
+(isGame(x) & isIndie(x)) -> ¬isPublishedByAAA(x)
+"(isGame(x) & releasedAfter(x, 2020)) -> isNewRelease(x)"
+"(isGame(x) & isPlatform(y) & supportsPlatform(x, y)) -> canBePlayedOn(x, y)"
+(isGame(x) & hasHighRatings(x)) -> isPopular(x)
+"(isGame(x) & isSequelOf(x, y)) -> isGame(y)"
+ (isGame(x) & isFreeToPlay(x) ) -> ~requiresPurchase(x)
+"(isGame(x) & isDeveloper(y) & developedBy(x, y)) -> creates(y, x)"
+"(isGame(x) & isGenre(y) & prefersGenre(User, y) & belongsToGenre(x, y) ) -> prefers(User, x)"
