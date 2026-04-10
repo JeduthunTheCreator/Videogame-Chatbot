@@ -58,12 +58,20 @@ As shown in the examples below, the system can respond to questions about hardwa
 
 In addition, the chatbot can provide broader gaming-related information, including community recommendations and upcoming events, showcasing its ability to combine predefined knowledge, NLP-based matching, and contextual understanding to deliver relevant and useful responses.
 
+<img src="assets/General Query 1.png" width="800"/>
+<img src="assets/General Query 2.png" width="800"/>
+<img src="assets/General Query 3.png" width="800"/>
+<img src="assets/General Query 4.png" width="800"/>
+
 ### Knowledge Base and Logical Reasoning
 The chatbot incorporates a structured knowledge base to support logical reasoning and fact-based queries. A set of predefined facts is stored in a CSV file using a format compatible with NLTK, allowing the system to represent relationships between entities (e.g. objects and their interactions).
 
 Before use, the knowledge base is validated to ensure consistency, preventing contradictory or invalid information from being processed. Once validated, the chatbot is able to perform basic inference, answering user queries by reasoning over the stored facts rather than relying solely on predefined responses.
 
 As demonstrated in the examples, the system can interpret relationships and respond to queries logically, showcasing its ability to move beyond simple pattern matching and provide more intelligent, knowledge-driven interactions.
+
+<img src="assets/Knowledge Base 1.png" width="800"/>
+<img src="assets/Knowledge Base 2.png" width="800"/>
 
 ### Image Classification and Multimodal Interaction
 
@@ -72,6 +80,9 @@ The chatbot integrates a computer vision component, allowing it to identify vide
 As demonstrated in the examples, the model is able to correctly identify games such as *Fortnite*, *Among Us*, *Minecraft*, and *God of War*, returning results in real time. This showcases the chatbot’s ability to go beyond text-based interaction and process visual data as part of the conversation.
 
 By combining image classification with conversational interaction, the system demonstrates a multimodal approach to AI, enabling users to interact with the chatbot using both text and images.
+
+<img src="assets/Image Classification 1.png" width="800"/>
+<img src="assets/Image Classification 2.png" width="800"/>
 
 
 
