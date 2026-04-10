@@ -6,7 +6,7 @@ This project is an AI-powered conversational agent designed to assist users with
 
 By combining natural language processing with external data sources, the system delivers context-aware responses and creates a more engaging, intelligent user experience.
 
-### System Capabilities
+### Core System Capabilities
 - Personalised game recommendations based on user preferences and interaction patterns  
 - Real-time game information retrieval through external API integration  
 - Multimodal interaction, allowing users to query using both text and images  
